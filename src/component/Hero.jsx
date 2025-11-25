@@ -10,7 +10,7 @@ const Hero = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       viewport={{ once: true }}
       id="home"
-      className="min-h-screen flex items-center pt-20 pb-16 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
+      className="min-h-screen flex items-center pt-20 pb-16 bg-linear-to-r from-dark-100 via-dark-200 to-dark-100"
     >
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}
@@ -49,13 +49,13 @@ const Hero = () => {
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             {/* Blob Behind */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-purple-700 opacity-70 blur-xl z-0"></div>
+            <div className="absolute inset-0 rounded-full bg-linear-to-r from-purple-400 to-purple-700 opacity-70 blur-xl z-0"></div>
 
             {/* Floating Image */}
             <motion.img
               src={assets.profileImg}
               alt="Hero"
-              className="relative w-full h-full md:h-80 md:w-80 object-cover rounded-full border-1 shadow-lg z-10"
+              className="relative w-full h-full md:h-80 md:w-80 object-cover rounded-full border shadow-lg z-10"
               animate={{ y: [0, -20, 0] }}
               transition={{
                 duration: 4,
