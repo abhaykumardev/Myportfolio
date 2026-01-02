@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 
-import profileImg from "../assets/myimg.jpg";
+export const profileImg = "/myimg.jpg"; 
 import projectImg1 from "../assets/movieapp.png";
 import projectImg2 from "../assets/fooddel.jpg";
 import projectImg3 from "../assets/project3.jpg";
