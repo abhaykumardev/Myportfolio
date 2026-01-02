@@ -29,50 +29,56 @@ const About = () => {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 viewport={{ once: false, amount: 0.2 }}
                 className="w-full h-full object-cover"
-                src={assets.profileImg}
+                src={assets.profileImg7}
                 alt="About Me"
               />
             </div>
             {/* Right Section - Text */}
             <motion.div
-            initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-                viewport={{ once: false, amount: 0.2 }}
-            
-             className="md:w-1/2">
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="md:w-1/2"
+            >
               <div>
                 <h3 className="text-2xl font-semibold mb-6">
-                My Journey as a Developer
-              </h3>
-              <p className="text-gray-300 mb-6">
-                I'm Abhay Kumar, a dedicated Full Stack Developer and AI enthusiast with a passion for crafting modern and functional web applications. My journey in tech has been fueled by curiosity and a relentless drive to learn and innovate.
-              </p>  
-              <p className="text-gray-300 mb-6">
-                With expertise in both front-end and back-end technologies, I strive to create seamless user experiences while ensuring robust functionality. When I'm not coding, you'll find me exploring the latest advancements in AI and how they can be integrated into web development.
-              </p>
-              <p className="text-gray-300 mb-6">
-                Let's connect and build something amazing together!
-              </p>
+                  My Journey as a Developer
+                </h3>
+                <p className="text-gray-300 mb-6">
+                  I'm Abhay Kumar, a dedicated Full Stack Developer and AI
+                  enthusiast with a passion for crafting modern and functional
+                  web applications. My journey in tech has been fueled by
+                  curiosity and a relentless drive to learn and innovate.
+                </p>
+                <p className="text-gray-300 mb-6">
+                  With expertise in both front-end and back-end technologies, I
+                  strive to create seamless user experiences while ensuring
+                  robust functionality. When I'm not coding, you'll find me
+                  exploring the latest advancements in AI and how they can be
+                  integrated into web development.
+                </p>
+                <p className="text-gray-300 mb-6">
+                  Let's connect and build something amazing together!
+                </p>
 
                 {/* cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-  {aboutInfo.map((info, index) => (
-    <div
-      key={index}
-      className="bg-dark-300 p-6 rounded-2xl shadow-md transition-transform duration-300 hover:translate-y-[-5px] cursor-pointer"
-    >
-      <div>
-        <info.icon className="text-4xl text-purple mb-4" />
-      </div>
-      <h4 className="text-xl font-semibold mb-2 text-purple">
-        {info.title}
-      </h4>
-      <p className="text-gray-400">{info.description}</p>
-    </div>
-  ))}
-</div>
-
+                  {aboutInfo.map((info, index) => (
+                    <div
+                      key={index}
+                      className="bg-dark-300 p-6 rounded-2xl shadow-md transition-transform duration-300 hover:translate-y-[-5px] cursor-pointer"
+                    >
+                      <div>
+                        <info.icon className="text-4xl text-purple mb-4" />
+                      </div>
+                      <h4 className="text-xl font-semibold mb-2 text-purple">
+                        {info.title}
+                      </h4>
+                      <p className="text-gray-400">{info.description}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           </div>
