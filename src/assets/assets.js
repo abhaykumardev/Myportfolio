@@ -110,7 +110,7 @@ export const projects = [
       "A modern food delivery web application that allows users to browse restaurants, add items to cart, and place orders with smooth animations and an intuitive user experience.",
     image: projectImg2,
     tech: ["React", "Framer Motion", "Tailwind CSS", "REST API"],
-    icons: [FaReact, FaBolt, FaCss3Alt, FaServer],
+    icons: [FaReact,FaCss3Alt, FaServer],
     demo: "https://fooddelwebapp.netlify.app/",
     code: "#",
   },
