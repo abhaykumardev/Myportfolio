@@ -3,9 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "homepage": "https://abhaykumardev.github.io/Myportfolio",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,8 +12,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.17",
     "framer-motion": "^12.23.24",
     "react": "^19.2.0",
@@ -24,7 +22,6 @@
     "react-router-dom": "^7.9.6",
     "tailwindcss": "^4.1.17"
   },
-
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.5",

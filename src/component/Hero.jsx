@@ -30,8 +30,12 @@ const Hero = () => {
             className="text-xl sm:text-2xl lg:text-3xl
                          font-semibold mb-6"
           >
-            A  <span className="text-blue-400"> Aspiring Full-Stack Developer</span> &{" "}
-            <span className="text-green-400">AI Enthusiast</span>
+            A{" "}
+            <span className="text-blue-400">
+              {" "}
+              Aspiring Full-Stack Developer
+            </span>{" "}
+            & <span className="text-green-400">AI Enthusiast</span>
           </h2>
 
           <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-xl mx-auto md:mx-0">
@@ -40,22 +44,28 @@ const Hero = () => {
           </p>
 
           {/* Buttons */}
-          <div
-            className="flex flex-col sm:flex-row
-                          gap-4 justify-center md:justify-start"
-          >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
               className="px-6 py-3 bg-purple-500 rounded-lg
-                         font-medium hover:bg-purple-700 transition"
+               font-medium hover:bg-purple-700 transition"
             >
               View Work
             </a>
 
             <a
+              href="/my_resume.pdf"
+              download
+              className="px-6 py-3 bg-purple-600 rounded-lg
+               font-medium hover:bg-purple-800 transition"
+            >
+              Download Resume
+            </a>
+
+            <a
               href="#contact"
               className="px-6 py-3 border border-purple-500
-                         rounded-lg font-medium hover:bg-purple-500/20 transition"
+               rounded-lg font-medium hover:bg-purple-500/20 transition"
             >
               Contact Me
             </a>
