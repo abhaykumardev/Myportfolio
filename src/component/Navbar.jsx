@@ -47,6 +47,13 @@ const Navbar = () => {
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full "></span>
           </a>
           <a
+            href="#dsa"
+            className="relative text-white/80 hover:text-purple transition-all duration-300 group"
+          >
+            <span>DSA</span>
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full "></span>
+          </a>
+          <a
             href="#contact"
             className="relative text-white/80 hover:text-purple transition-all duration-300 group"
           >
@@ -101,6 +108,13 @@ const Navbar = () => {
             className="relative text-white/80 hover:text-purple transition-all duration-300 group"
           >
             <span>Projects</span>
+          </a>
+          <a
+            href="#dsa"
+            className="relative text-white/80 hover:text-purple transition-all duration-300 group"
+          >
+            <span>DSA</span>
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full "></span>
           </a>
           <a
             onClick={() => setShowMenu(false)}
