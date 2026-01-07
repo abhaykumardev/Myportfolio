@@ -1,19 +1,29 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import Navbar from './component/Navbar.jsx'
-import Footer from './component/Footer.jsx'
+import React, { useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
+
 const App = () => {
+  const [introDone, setIntroDone] = useState(false);
+  const location = useLocation();
+
   return (
     <div>
-      <Navbar/>
-      
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-      </Routes>
-      <Footer/>
-    </div>
-  )
-}
+      {introDone && <Navbar />}
 
-export default App
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home introDone={introDone} setIntroDone={setIntroDone} />
+          }
+        />
+      </Routes>
+
+      {introDone && <Footer />}
+    </div>
+  );
+};
+
+export default App;

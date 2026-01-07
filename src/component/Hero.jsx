@@ -2,53 +2,73 @@ import React from "react";
 import { motion } from "framer-motion";
 import { assets } from "../assets/assets";
 
+const textVariant = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const Hero = () => {
   return (
     <motion.section
       id="home"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true }}
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
       className="min-h-screen flex items-center pt-24 pb-16
                  bg-linear-to-r from-dark-100 via-dark-200 to-dark-100"
     >
-      <div
-        className="container mx-auto px-6 flex flex-col-reverse
-                      md:flex-row items-center gap-12"
-      >
-        {/* LEFT: Text */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
-          <h1
+      <div className="container mx-auto px-6 flex flex-col-reverse
+                      md:flex-row items-center gap-12">
+
+        {/* LEFT */}
+        <motion.div
+          className="w-full md:w-1/2 text-center md:text-left"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: { staggerChildren: 0.2 },
+            },
+          }}
+        >
+          <motion.h1
+            variants={textVariant}
             className="text-3xl sm:text-4xl lg:text-5xl
-                         font-bold text-white mb-4"
+                       font-bold text-white mb-4"
           >
             Hi, I’m <span className="text-purple-400">Abhay Kumar</span>
-          </h1>
+          </motion.h1>
 
-          <h2
+          <motion.h2
+            variants={textVariant}
             className="text-xl sm:text-2xl lg:text-3xl
-                         font-semibold mb-6"
+                       font-semibold mb-6"
           >
             A{" "}
-            <span className="text-blue-400">
-              {" "}
-              Aspiring Full-Stack Developer
-            </span>{" "}
+            <span className="text-blue-400">Full-Stack Developer (React)</span>{" "}
             & <span className="text-green-400">AI Enthusiast</span>
-          </h2>
+          </motion.h2>
 
-          <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-xl mx-auto md:mx-0">
-            I build modern, performant, and user-friendly web applications with
-            a strong focus on clean design and scalability.
-          </p>
+          <motion.p
+            variants={textVariant}
+            className="text-base sm:text-lg text-gray-300 mb-8
+                       max-w-xl mx-auto md:mx-0"
+          >
+            I build modern, performant, and user-friendly web applications
+            using React, Tailwind, and modern JavaScript with a strong focus
+            on clean UI and real-world problem solving.
+          </motion.p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <motion.div
+            variants={textVariant}
+            className="flex flex-col sm:flex-row gap-4
+                       justify-center md:justify-start"
+          >
             <a
               href="#projects"
               className="px-6 py-3 bg-purple-500 rounded-lg
-               font-medium hover:bg-purple-700 transition"
+                         font-medium transition transform
+                         hover:-translate-y-1 hover:shadow-lg"
             >
               View Work
             </a>
@@ -57,7 +77,8 @@ const Hero = () => {
               href="/my_resume.pdf"
               download
               className="px-6 py-3 bg-purple-600 rounded-lg
-               font-medium hover:bg-purple-800 transition"
+                         font-medium transition transform
+                         hover:-translate-y-1 hover:shadow-lg"
             >
               Download Resume
             </a>
@@ -65,37 +86,28 @@ const Hero = () => {
             <a
               href="#contact"
               className="px-6 py-3 border border-purple-500
-               rounded-lg font-medium hover:bg-purple-500/20 transition"
+                         rounded-lg font-medium transition
+                         hover:bg-purple-500/20"
             >
               Contact Me
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        {/* RIGHT: Image */}
+        {/* RIGHT */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <div
-            className="relative
-                          w-52 h-52
-                          sm:w-64 sm:h-64
-                          md:w-72 md:h-72
-                          lg:w-80 lg:h-80"
-          >
-            {/* Blob */}
-            <div
-              className="absolute inset-0 rounded-full
-                            bg-linear-to-r from-purple-400 to-purple-700
-                            opacity-60 blur-2xl"
-            />
-
-            {/* Image */}
+          <div className="relative w-52 h-52 sm:w-64 sm:h-64
+                          md:w-72 md:h-72 lg:w-80 lg:h-80">
+            <div className="absolute inset-0 rounded-full
+                            bg-linear-to-r from-purple-400
+                            to-purple-700 opacity-60 blur-2xl" />
 
             <motion.img
               src={assets.profileImg}
               alt="Abhay Kumar"
               className="relative w-full h-full object-cover
-             rounded-full border border-purple-400/40
-             shadow-xl"
+                         rounded-full border border-purple-400/40
+                         shadow-2xl"
               animate={{ y: [0, -16, 0] }}
               transition={{
                 duration: 4,

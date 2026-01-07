@@ -1,25 +1,32 @@
-import React from 'react'
-import Hero from '../component/Hero'
-import About from '../component/About'
-import Skill from '../component/Skill'
-import Project from '../component/Project'
-import Contact from '../component/Contact'
-import DSASection from '../component/Dsasection'
-import LeetCodeStats from '../component/Leetcodestats'
+import React from "react";
+import Hero from "../component/Hero";
+import About from "../component/About";
+import Skill from "../component/Skill";
+import Project from "../component/Project";
+import Contact from "../component/Contact";
+import DSASection from "../component/Dsasection";
+import LeetCodeStats from "../component/Leetcodestats";
+import WelcomeModal from "../component/Welcomemodal";
 
-const Home = () => {
+
+const Home = ({ introDone, setIntroDone }) => {
   return (
     <div>
-      <Hero/>
-      <About/>
-      <Skill/>
-      <Project/>
-      
-      <DSASection/>
-      <LeetCodeStats/>
-      <Contact/>
-    </div>
-  )
-}
+      <WelcomeModal onFinish={() => setIntroDone(true)} />
 
-export default Home
+      {introDone && (
+        <>
+          <Hero />
+          <About />
+          <Skill />
+          <Project />
+          <DSASection />
+          <LeetCodeStats />
+          <Contact />
+        </>
+      )}
+    </div>
+  );
+};
+
+export default Home;
