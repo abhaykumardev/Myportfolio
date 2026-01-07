@@ -30,19 +30,19 @@ const DSASection = () => {
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-          <div className="rounded-xl bg-[#1a1a1a] p-6 border border-purple-500/20">
+          <div className="rounded-xl bg-dark-100 p-6 border border-purple-500/20">
             <h3 className="text-2xl font-bold text-purple-500">200+</h3>
             <p className="text-gray-400 mt-2">DSA Problems Solved</p>
           </div>
 
-          <div className="rounded-xl bg-[#1a1a1a] p-6 border border-purple-500/20">
+          <div className="rounded-xl bg-dark-100 p-6 border border-purple-500/20">
             <h3 className="text-lg font-semibold text-white">Core Topics</h3>
             <p className="text-gray-400 mt-2 text-sm">
               Arrays, Strings, Trees, Graphs, DP
             </p>
           </div>
 
-          <div className="rounded-xl bg-[#1a1a1a] p-6 border border-purple-500/20">
+          <div className="rounded-xl bg-dark-100 p-6 border border-purple-500/20">
             <h3 className="text-lg font-semibold text-white">Platforms</h3>
             <p className="text-gray-400 mt-2 text-sm">
               LeetCode, CodeStudio

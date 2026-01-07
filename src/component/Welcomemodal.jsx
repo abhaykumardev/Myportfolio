@@ -24,7 +24,7 @@ const WelcomeModal = ({ onFinish }) => {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center
+          className="fixed inset-0 z-9999 flex items-center justify-center
                      bg-black"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
