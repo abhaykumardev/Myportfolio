@@ -9,7 +9,7 @@ const Skill = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: false, amount: 0.2 }}
       id="skills"
-      className="py-20 bg-dark-100"
+      className="py-20 bg-slate-900"
     >
 
       <div className="container mx-auto px-6">
@@ -23,7 +23,7 @@ const Skill = () => {
 
           {
             skills.map((skill, index) => (
-              <div key={index} className="bg-dark-200 p-6 rounded-2xl shadow-md hover:translate-y-2 transition  duration-300 cursor-pointer">
+              <div key={index} className="bg-gray-800 p-6 rounded-2xl shadow-md hover:translate-y-2 transition  duration-300 cursor-pointer">
                 <div className="flex items-center mb-4">  
                   <skill.icon className="text-4xl text-purple-400 mr-6 w-12 h-12" />
                   <h3 className="text-xl font-semibold">{skill.title}</h3>

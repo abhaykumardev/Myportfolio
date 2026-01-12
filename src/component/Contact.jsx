@@ -42,7 +42,7 @@ const Contact = () => {
       transition={{ duration: 1, ease: 'easeInOut' }}
       viewport={{ once: false, amount: 0.2 }}
       id="contact"
-      className="py-20 bg-dark-200"
+      className="py-20 bg-slate-900"
     >
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-4">
@@ -70,7 +70,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 required
-                className="w-full px-4 py-3 rounded-lg bg-dark-300 border border-dark-400 text-gray-200 focus:outline-none focus:border-purple-500"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-dark-400 text-gray-200 focus:outline-none focus:border-purple-500"
               />
             </div>
 
@@ -82,7 +82,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 rounded-lg bg-dark-300 border border-dark-400 text-gray-200 focus:outline-none focus:border-purple-500"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-dark-400 text-gray-200 focus:outline-none focus:border-purple-500"
               />
             </div>
 
@@ -94,7 +94,7 @@ const Contact = () => {
                 name="message"
                 rows="5"
                 required
-                className="w-full px-4 py-3 rounded-lg bg-dark-300 border border-dark-400 text-gray-200 focus:outline-none focus:border-purple-500"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-dark-400 text-gray-200 focus:outline-none focus:border-purple-500"
               ></textarea>
             </div>
 
