@@ -13,10 +13,11 @@ import {
   FaDatabase,
   FaCloud,
   FaRobot,
+  
 } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 
-export const profileImg = "/mpr.png"; 
+export const profileImg = "/mpr.png";
 import projectImg1 from "../assets/movieapp.png";
 import projectImg2 from "../assets/fooddel.jpg";
 import projectImg3 from "../assets/project3.jpg";
@@ -95,6 +96,24 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Eventora - Event Management Platform",
+    description:
+      "A full-stack event management platform where users can discover, create, and book events. Features secure authentication with OTP verification, event booking, user dashboard, and responsive design for a seamless experience.",
+    image: projectImg2,
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Tailwind CSS",
+      "Nodemailer",
+    ],
+    icons: [FaReact, FaNodeJs, SiExpress, SiMongodb, SiTailwindcss],
+    demo: "https://your-demo-link.com",
+    code: "https://github.com/abhaykumardev/Event_booking_app",
+  },
+  {
     title: "CineFlix-Movie App",
     description:
       "A movie discovery web application that fetches real-time movie data from an external API. Built with a clean and responsive UI using HTML, CSS, and JavaScript.",
@@ -110,7 +129,7 @@ export const projects = [
       "A modern food delivery web application that allows users to browse restaurants, add items to cart, and place orders with smooth animations and an intuitive user experience.",
     image: projectImg2,
     tech: ["React", "Framer Motion", "Tailwind CSS", "REST API"],
-    icons: [FaReact,FaCss3Alt, FaServer],
+    icons: [FaReact, FaCss3Alt, FaServer],
     demo: "https://fooddelwebapp.netlify.app/",
     code: "#",
   },

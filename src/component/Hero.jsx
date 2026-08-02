@@ -80,7 +80,7 @@ const Hero = () => {
                          font-medium transition transform
                          hover:-translate-y-1 hover:shadow-lg"
             >
-              Download Resume
+              Resume
             </a>
 
             <a
