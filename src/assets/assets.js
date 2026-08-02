@@ -27,12 +27,12 @@ import projectImg5 from "../assets/recipeapp.jpg";
 import projectImg6 from "../assets/project6.avif";
 import projectImg8 from "../assets/homee.jpg";
 import profileImg7 from "../assets/home22.jpg";
-import projectImg8 from "../assets/eventora.png";
+import projectImg9 from "../assets/eventora.png";
 
 export const assets = {
   profileImg,
   profileImg7,
-  projectImg8,
+  projectImg9,
 };
 
 export const aboutInfo = [
@@ -102,7 +102,7 @@ export const projects = [
     title: "Eventora - Event Management Platform",
     description:
       "A full-stack event management platform where users can discover, create, and book events. Features secure authentication with OTP verification, event booking, user dashboard, and responsive design for a seamless experience.",
-    image: projectImg8,
+    image: projectImg9,
     tech: [
       "React",
       "Node.js",
